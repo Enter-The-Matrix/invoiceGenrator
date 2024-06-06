@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 function AppHeader() {
    const navigate = useNavigate()
   const dispatch = useDispatch();
+   
+   //made this handleLogout to empty the localstorage and store to generate a new invoice
   const handleLogout = () => {
     localStorage.removeItem("sellerDetails");
     localStorage.removeItem("shippingDetails");
